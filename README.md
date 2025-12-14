@@ -1,73 +1,147 @@
-# Welcome to your Lovable project
+🍬 Sweet Shop Management System
 
-## Project info
+A full-stack Sweet Shop Management System designed to manage sweets inventory, user authentication, and purchase workflows.
+This project was built as part of a placement assessment to demonstrate skills in frontend development, API design, authentication, clean architecture, and modern development practices.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The system supports role-based access, allowing normal users to browse and purchase sweets, while admins can manage inventory and sweet details.
 
-## How can I edit this code?
+🚀 Tech Stack
+Frontend:
+React (Vite)
+TypeScript
+Tailwind CSS
+Context API for state management
 
-There are several ways of editing your application.
+Backend:
+Node.js
+Express
+TypeScript
+JWT Authentication
+RESTful API architecture
 
-**Use Lovable**
+Tooling & Testing
+ESLint
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+✨ Features
+👤 Authentication
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+User registration and login
+JWT-based authentication
+Role-based access control (USER, ADMIN)
+Protected routes for authenticated users
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🍭 Sweet Management
+View all available sweets
+Each sweet includes:
+Name
+Category
+Price
+Quantity in stock
+Search and filter sweets by:
+Name
+Category
+Price range
 
-Follow these steps:
+🛒 Inventory & Purchase
+Purchase sweets (quantity decreases automatically)
+Purchase button disabled when stock is zero
+Prevents purchasing out-of-stock items
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🛠️ Admin Features(Admin users only)
+Add new sweets
+Update sweet details
+Delete sweets
+Restock inventory
+Secure admin-only API access
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🎨 User Experience
+Responsive and clean UI
+Reusable components
+Clear loading and error states
+Simple and intuitive dashboard
 
-# Step 3: Install the necessary dependencies.
-npm i
+📂 Project Structure
+Frontend
+src/
+ ├── components/     # Reusable UI components
+ ├── pages/          # Application pages
+ ├── hooks/          # Custom React hooks
+ ├── services/       # API service layer
+ ├── types/          # Shared TypeScript types
+ ├── lib/            # Utility helpers
+ └── main.tsx
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Backend
+backend/
+ ├── controllers/    # Request handlers
+ ├── routes/         # API routes
+ ├── services/       # Business logic
+ ├── middleware/     # Auth & error handling
+ ├── models/         # Data models
+ ├── utils/          # JWT & helpers
+ └── server.ts
+
+⚙️ Setup & Run Locally
+1️⃣ Clone Repository
+git clone https://github.com/0NIKHIL4/candy-cloud-ctrl.git
+cd candy-cloud-ctrl
+
+2️⃣ Frontend Setup
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+3️⃣ Backend Setup
+cd backend
+npm install
+npm run dev
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🔐 API Overview (Backend)
+Auth
+POST /api/auth/register
+POST /api/auth/login
+Sweets
+GET /api/sweets
+POST /api/sweets (Admin)
+PUT /api/sweets/:id (Admin)
+DELETE /api/sweets/:id (Admin)
+GET /api/sweets/search
 
-**Use GitHub Codespaces**
+Inventory
+POST /api/sweets/:id/purchase
+POST /api/sweets/:id/restock (Admin)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🤖 My AI Usage
 
-## What technologies are used for this project?
+AI tools were used selectively and responsibly to improve productivity and learning while maintaining full ownership of the final implementation.
+AI Tools Used
+Lovable AI
+ChatGPT
 
-This project is built with:
+How AI Was Used
+Used Lovable AI to scaffold initial project setup and backend boilerplate.
+Used Lovable AI heavily for backend API structure, authentication logic, and service/controller patterns.
+Used ChatGPT occasionally for frontend best practices, TypeScript typing clarification, and debugging guidance.
+All AI-generated code was reviewed, modified, and tested manually.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Reflection
+AI helped accelerate setup and supported learning in backend development, allowing me to focus more on system integration, validation, and clean architecture.
+AI was used as a support tool, not a replacement for understanding or implementation.
 
-## How can I deploy this project?
+📌 Future Improvements
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Add automated tests (unit & integration)
+Connect production database
+Improve UI animations
+Add pagination for sweet listing
 
-## Can I connect a custom domain to my Lovable project?
+👨‍💻 Author
+Nikhil Yadav
+B.Tech Student | Aspiring Full-Stack Developer
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+
+Just say 👍
