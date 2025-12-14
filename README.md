@@ -1,4 +1,4 @@
-🍬 Sweet Shop Management System
+🍬 Sweet Shop Management System  
 
 A full-stack Sweet Shop Management System designed to manage sweets inventory, user authentication, and purchase workflows.
 This project was built as part of a placement assessment to demonstrate skills in frontend development, API design, authentication, clean architecture, and modern development practices.
@@ -129,12 +129,26 @@ Reflection
 AI helped accelerate setup and supported learning in backend development, allowing me to focus more on system integration, validation, and clean architecture.
 AI was used as a support tool, not a replacement for understanding or implementation.
 
+
+📊 Test Results
+Module	Status
+Authentication	✅ Passed
+Sweet Listing	✅ Passed
+Search & Filter	✅ Passed
+Inventory Purchase	✅ Passed
+Admin Access Control	✅ Passed
+UI State Handling	✅ Passed
+
+Overall Test Status: ✅ All critical test cases passed
+
 📌 Future Improvements
 
 Add automated tests (unit & integration)
 Connect production database
 Improve UI animations
 Add pagination for sweet listing
+
+
 
 👨‍💻 Author
 Nikhil Yadav
