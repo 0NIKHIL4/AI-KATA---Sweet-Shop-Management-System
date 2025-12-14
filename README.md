@@ -2,8 +2,19 @@
 
 A full-stack Sweet Shop Management System designed to manage sweets inventory, user authentication, and purchase workflows.
 This project was built as part of a placement assessment to demonstrate skills in frontend development, API design, authentication, clean architecture, and modern development practices.
-
 The system supports role-based access, allowing normal users to browse and purchase sweets, while admins can manage inventory and sweet details.
+
+🌐 Live Demo
+
+🔗 Application URL:
+👉https://ai-kata.lovable.app/
+
+Deployment Note:
+Due to time constraints during the assessment window, the application is hosted using an AI-assisted deployment platform.
+The backend APIs and authentication flows in the live demo are powered by the same AI platform, which is why the application is published under its provided domain.
+
+This deployment is intended to showcase the overall UI flow, feature structure, and end-to-end system design.
+The architecture allows the frontend to be easily connected to a custom Node.js/Express backend if required.
 
 🚀 Tech Stack
 Frontend:
